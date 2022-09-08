@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --fzT: 20px;
+    --fzST: 18px;
+    --fzB: 16px;
+    --fzTD: 50px;
+    --fzSTD: 28px;
+    --fzBD: 26px;
+    --fwT: 600;
+    --fwB: 400;
+}
+
+body{
+
+    background-color: #ffffff;
+}
+
+.main{
+    min-width: 300px;
+    min-height: 650px;
+    background-color: #ffffff;
+}
+/* NAVBAR */    
+.navbar_desktop{
+    display: none;
+  
+  
+}
+.img_home_desktop{
+    display: none;
+}
+.fondoV{
+    background-image: url(/Portafolio-academlo-hqt/assets/img/Vector.png);
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+    background-position: center;
+}
+.fondoV{
+    margin-bottom: 30px;
+}
+
+.img_home_mobile{
+    display: flex;
+    justify-content: center;
+}
+
+.img_home_mobile img{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.posfix{
+    position: fixed;
+} 
+
+.navbar_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.opacity{
+    opacity: 0.7;
+}
+
+.menu_navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    transform: translateY(-200%);
+    transition: transform 0.5s;
+    margin-top: -0.1rem;
+    background-color: white;
+}
+
+
+.menu_show{
+    transform: translateY(0);
+}
+
+.icon_menu{
+    text-align: end;
+    cursor: pointer;
+    width: 100%;
+    background-color: white;
+    
+}
+
+/* HOME */
+/* CLase utilitaria para flex y tal vez lo otro */
+.text_home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1em;
+    height: inherit;
+    padding: 1em;
+}
+
+.title_home{
+    font-size: var(--fzT);
+    font-weight: var(--fwT);
+}
+
+.info_home{
+    font-size: var(--fzB);
+    font-weight: var(--fwB);
+}
+.icons_home{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.icons_home img{
+    background-color: #8E7BEF;
+    padding: 0.5em;
+    border-radius: 2em;
+}
+
+.contact_home {
+    background-color: #5d3bef;
+    padding: 1em ;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.contact_home img{
+    height: 30px;
+    width: 30px;
+    background-color: #5d3bef;
+} 
+.contact_home p{
+    text-align: center;
+    padding-top: 0.3em;
+    color: white;
+} 
+
+/* ABOUT */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+    gap: 1em;
+}
+
+.skills img{
+    height: 25px;
+    width: 32px;
+}
+
+.skills .info_skills {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center; 
+    gap: 1em;
+    flex-wrap: wrap;
+    
+}
+
+.title_skills{
+    text-align: center;
+}
+
+.title_u_design, .title_w_design{
+    display: flex;
+    justify-content: space-evenly;
+   padding: 0 3em;
+}
+
+.title_p_design, .title_i_design{
+    display: flex;
+    justify-content: space-evenly;
+   padding: 0 2em;
+}
+
+.u_design, .p_design, .i_design , .w_design{
+    background-color: #f9f5f2;
+    border-radius: 1em;
+    padding: 1em;
+    height: 200px;
+    width: 250px;
+    
+}
+
+/* EXPERIENCE */
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.experience .title_experience{
+    text-align: center;
+}
+
+.experience .info_experience{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.experience .info_experience .amazon_years, .air_years, .google_years{
+    text-align: end;
+    padding: 1em;
+}
+/* ----------------------------------------------------------------------- */
+
+.portafolios img{
+    height: 250px;
+    width: 350px;
+}
+
+.portafolios {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+/* .portafolios .title_portafolios{
+    text-align: center;
+} */
+
+.portafolios .images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 0.8em;
+
+}
+
+/*----------------------Contacto----------------*/
+
+
+
+.contact .contact-container{
+    justify-content: center;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.phone img, .mail img{
+    background-color: #f9f6ff;
+    border: 1em solid #f9f6ff;
+    border-radius: 100%;
+}
+
+@media (max-width: 400px) {
+    
+    .info_skills{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+    
+    /* NAVBAR */
+    .navbar_desktop{
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: end;
+        gap: 1em;
+        background-color: white;
+        padding-top: 1em;
+    }
+    .img_home_desktop{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+       /* background-image: url(./assets/Imágenes/Vector.png); */
+    }
+
+    .img_home_desktop img{
+        width: 100%;
+    }
+
+    .navbar_mobile{
+        display: none;
+    }
+    .img_home_mobile{
+        display: none;
+    }
+   
+    /* HOME */
+    .home{
+        padding-top: 3em;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+
+    .text_home{
+        justify-content: space-evenly;
+    }
+
+    .title_home{
+        font-size: var(--fzTD);
+        font-weight: var(--fwT);
+    }
+
+    .info_home, .contact_home{
+        font-size: var(--fzBD);
+    }
+    
+    /* ABOUT */
+
+    .text_about{
+        display: flex;
+        align-self: center;
+        width: 70%;
+    }
+
+    /* EXPERIENCE */
+
+    .experience .info_experience{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+
+}
